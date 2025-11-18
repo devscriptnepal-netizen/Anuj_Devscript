@@ -6,7 +6,8 @@
 
 
 #services{
-    background-color: white;
+    background-color: #bfbfbf;
+    /* background-color:#cfcfcf; */
     padding: 4rem 2rem;
     position: relative;
     z-index: 1;
