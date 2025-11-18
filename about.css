@@ -83,3 +83,11 @@
     color: var(--light-gray);
     line-height: 1.7;
 }
+
+.btn-primary-about{
+    text-decoration: none;
+    /* color: white; */
+    color: white !important; 
+    background-color: #1E1E20 !important;
+
+}
