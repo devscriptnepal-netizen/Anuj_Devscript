@@ -7,8 +7,9 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, var(--pure-black), transparent, var(--pure-black));
+    background: linear-gradient(to top, var(--pure-black), transparent, );
     pointer-events: none;
+    border-radius: 32px;
 }
 
 .contact-grid {
@@ -234,7 +235,7 @@ spline-viewer {
     right: 8px;
     width: 200px;
     height: 55px;
-    background-color: rgb(219, 219, 219);
+    background-color: #E3E3E3;
     border-radius: 25px;
     z-index: 9999 !important;
     pointer-events: cursor;
