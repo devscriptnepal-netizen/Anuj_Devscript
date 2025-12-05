@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="blog.css" />
 
 
 
@@ -91,8 +92,76 @@
 
 
 
-    The blog page is under construction. Please check back later for updates and articles!
-</main>
+ <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Our Blog</h1>
+            <p>Empowering you with the latest in SEO, Cybersecurity, UI/UX and Development</p>
+
+            <!-- Category Filter Pills -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="View All">View All</button>
+                <button class="filter-btn" data-category="SEO">SEO</button>
+                <button class="filter-btn" data-category="UI/UX">UI/UX</button>
+                <button class="filter-btn" data-category="Cloud Service">Cloud Service</button>
+                <button class="filter-btn" data-category="Cyber Security">Cyber Security</button>
+                <button class="filter-btn" data-category="Web Development">Web Development</button>
+                <button class="filter-btn" data-category="App Development">App Development</button>
+            </div>
+        </div>
+
+        <!-- Latest Articles Section -->
+        <div class="articles-section">
+            <h2>Latest Articles</h2>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+            <!-- Blog Card 1 -->
+            <a href="website_price_blog.html" class="blog-card-link">
+                <div class="blog-card">
+                    <img 
+                        src="https://3000-ee50726c-6c58-42a5-93bd-0a5e5dacc505.orchids.page/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1460925895917-afdab827c52f%3Fw%3D800%26q%3D80&w=1080&q=75" 
+                        alt="Website Development Cost in Nepal 2025" 
+                        class="blog-card-image"
+                    >
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">Website Development Cost in Nepal 2025 — Complete Guide for Businesses</h3>
+                        <p class="blog-card-description">
+                            Discover transparent pricing and feature breakdowns for building websites in Nepal. From static websites to custom eCommerce systems, get a detailed guide on costs, timelines, and what to expect when hiring a Nepali web studio like DevScript Nepal.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <!-- More blog cards can be added here -->
+
+        </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for interactive filters -->
+    <script>
+        // Get all filter buttons
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        // Add click event to each button
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Get the selected category
+                const category = this.getAttribute('data-category');
+                console.log('Selected category:', category);
+                
+                // Here you can add filtering logic for blog posts
+                // For example, show/hide cards based on category
+            });
+        });
+    </script>
+    </main>
 
 
 
